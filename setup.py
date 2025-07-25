@@ -9,7 +9,7 @@ setup(
     packages=["Module"],
     install_requires=["Click"],
     extras_require={
-        "dev": ["pytest", "pytest-cov"],
+        "dev": ["pytest", "pytest-cov", "wheel"],
         "test": ["pytest", "pytest-cov"],
     },
     entry_points="""
