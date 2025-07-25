@@ -7,5 +7,9 @@ setup(
     author="coding-beagle",
     author_email="nicholasp.teague@gmail.com",
     packages=["Module"],
-    install_requires=["click"],
+    install_requires=["Click"],
+    entry_points="""
+        [console_scripts]
+        module=module.__main__:cli
+    """,
 )
