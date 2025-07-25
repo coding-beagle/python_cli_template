@@ -8,6 +8,10 @@ setup(
     author_email="nicholasp.teague@gmail.com",
     packages=["Module"],
     install_requires=["Click"],
+    extras_require={
+        "dev": ["pytest", "pytest-cov"],
+        "test": ["pytest", "pytest-cov"],
+    },
     entry_points="""
         [console_scripts]
         module=module.__main__:cli
