@@ -43,3 +43,9 @@ install-dev: ## Install the module + dev tools
 		. .venv/scripts/activate ;\
 		pip install -e .[dev] ;\
 	}
+
+test: ## Run pytest tests
+	{ \
+		. .venv/scripts/activate ;\
+		python -m pytest Tests/ -v ;\
+	}
